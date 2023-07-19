@@ -1,6 +1,6 @@
 import React from "react";
 
-import googledev from "../assets/googledev.svg";
+import googledev from "../assets/googledev.jpg";
 import ptulogo from "../assets/classic-logo.png";
 const Partners = () => {
   return (

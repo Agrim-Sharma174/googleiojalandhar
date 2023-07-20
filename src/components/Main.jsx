@@ -7,10 +7,14 @@ import googledev from "../assets/googledev.jpg";
 import ptulogo from "../assets/classic-logo.png";
 import { MDBAccordion, MDBAccordionItem, MDBContainer } from "mdb-react-ui-kit";
 
-import { faFacebook, faTwitter,faInstagram , faLinkedin  } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import ImageComponent from "./ImageComponent.jsx";
 
@@ -385,7 +389,7 @@ const Main = () => {
 
       {/* Partners */}
 
-        <hr />
+      <hr />
       <div className="partners">
         <h2 className="text-center mt-2">Sponsors</h2>
         <p className="text-center mt-2">
@@ -415,7 +419,7 @@ const Main = () => {
 
       {/* Team */}
 
-        <hr />
+      <hr />
       <div className="team">
         <h2 className="text-center mt-2">Team</h2>
 
@@ -632,7 +636,7 @@ const Main = () => {
         </div>
       </div>
 
-        <hr />
+      <hr />
       <div className="faqs">
         <h2 className="text-center mt-2">Frequently asked questions</h2>
         <p className="text-center mt-2">
@@ -703,14 +707,28 @@ const Main = () => {
 
       <div className="footer">
         <div className="footer-content">
-          <a className="footer-heading" href="">I/O Extended Jalandhar</a>
+          <a className="footer-heading" href="">
+            I/O Extended Jalandhar
+          </a>
           <section className="d-flex  follow-section">
             <h5>Follow Us : </h5>
             <div className="followus ">
-            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-fb" icon={["fab", "facebook"]} />
-            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-in" icon={["fab", "instagram"]} />
-            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-li" icon={["fab", "linkedin"]} />
-            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-tw" icon={["fab", "twitter"]} />
+              <FontAwesomeIcon
+                className="ml-3 pl-3 footer-icons foot-fb"
+                icon={["fab", "facebook"]}
+              />
+              <FontAwesomeIcon
+                className="ml-3 pl-3 footer-icons foot-in"
+                icon={["fab", "instagram"]}
+              />
+              <FontAwesomeIcon
+                className="ml-3 pl-3 footer-icons foot-li"
+                icon={["fab", "linkedin"]}
+              />
+              <FontAwesomeIcon
+                className="ml-3 pl-3 footer-icons foot-tw"
+                icon={["fab", "twitter"]}
+              />
             </div>
           </section>
           <hr className="footer-hr" />

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 //Import MD Ui kits
 import {
@@ -16,70 +16,73 @@ import {
   MDBDropdownMenu,
   MDBDropdownItem,
   MDBCollapse,
-} from 'mdb-react-ui-kit';
+} from "mdb-react-ui-kit";
 
-import logo from '../assets/logo.png'
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
-    //useState for mobile view
-    const [showBasic, setShowBasic] = useState(false);
+  //useState for mobile view
+  const [showBasic, setShowBasic] = useState(false);
 
-
-  return  (
-    <MDBNavbar expand='lg' light bgColor='light'>
-      <MDBContainer fluid className='nav-content'>
-      <div className='logo-container'>
-          <MDBNavbarBrand href='#'>
-            <img src={logo} width='240px' height='auto' className='logo' alt='' />
+  return (
+    <MDBNavbar expand="lg" light bgColor="light">
+      <MDBContainer fluid className="nav-content">
+        <div className="logo-container">
+          <MDBNavbarBrand href="#">
+            <img
+              src={logo}
+              width="240px"
+              height="auto"
+              className="logo"
+              alt=""
+            />
           </MDBNavbarBrand>
         </div>
 
         <MDBNavbarToggler
-          aria-controls='navbarSupportedContent'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
           onClick={() => setShowBasic(!showBasic)}
         >
-          <MDBIcon icon='bars' fas />
+          <MDBIcon icon="bars" fas />
         </MDBNavbarToggler>
 
         <MDBCollapse navbar show={showBasic}>
-          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+          <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
             <MDBNavbarItem>
-              <MDBNavbarLink  href='#' className='nav-links'>
+              <MDBNavbarLink href="#" className="nav-links">
                 Schedule
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#' className='nav-links'>Speaker</MDBNavbarLink>
-            </MDBNavbarItem>
-            
-            <MDBNavbarItem>
-              <MDBNavbarLink href='#' className='nav-links'>Partners</MDBNavbarLink>
-            </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink href='#' className='nav-links'>Team</MDBNavbarLink>
-            </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink href='#' className='nav-links'>FAQs</MDBNavbarLink>
+              <MDBNavbarLink href="#" className="nav-links">
+                Speaker
+              </MDBNavbarLink>
             </MDBNavbarItem>
 
-           
-
-            
+            <MDBNavbarItem>
+              <MDBNavbarLink href="#" className="nav-links">
+                Partners
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink href="#" className="nav-links">
+                Team
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink href="#" className="nav-links">
+                FAQs
+              </MDBNavbarLink>
+            </MDBNavbarItem>
           </MDBNavbarNav>
-
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
 
-
-
-
-
-// 
-
+//

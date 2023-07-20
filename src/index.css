@@ -995,10 +995,10 @@ hr {
     display: flex;
     /* flex-direction: column; */
   }
-  .followus {
+  /* .followus {
     margin-left: -16px;
     margin-top: -3px;
-  }
+  } */
 
   .footer-link-section {
     display: flex;

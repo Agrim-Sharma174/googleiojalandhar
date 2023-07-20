@@ -96,6 +96,8 @@ const Main = () => {
         </div>
       </div>
 
+      <hr />
+
       {/* Schedule Section */}
 
       <div className="schedule-section">

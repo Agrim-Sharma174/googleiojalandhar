@@ -1030,6 +1030,11 @@ hr {
   .partners {
     margin-top: 2.5rem;
   }
+
+  .card1
+  {
+    transform: scale(0.8);
+  }
 }
 
 /* Media query for medium screens */

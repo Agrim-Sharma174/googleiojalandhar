@@ -1045,6 +1045,13 @@ hr {
     font-size: 3.5rem;
     max-width: 450px;
   }
+
+  .footer-icons
+  {
+    font-size: 1.5rem;
+  }
+
+  
 }
 
 /* Media query for large screens */
@@ -1060,4 +1067,38 @@ hr {
     font-size: 4rem;
     max-width: 480px;
   }
+
+  .footer-icons
+  {
+    font-size: 1.5rem;
+  }
 }
+
+.footer-icons
+{
+  cursor: pointer;
+}
+
+
+.footer-icons:hover
+{
+  transform: translateY(-2px);
+  transition: all 0.5s;
+}
+
+.foot-tw:hover{
+  color: #538ff7;
+}
+
+.foot-fb:hover{
+  color: #477cd8;
+}
+
+.foot-in:hover{
+  color:  rgb(245, 31, 191);
+}
+
+.foot-li:hover{
+  color: #2c5bad;
+}
+

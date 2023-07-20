@@ -705,10 +705,10 @@ const Main = () => {
           <section className="d-flex  follow-section">
             <h5>Follow Us : </h5>
             <div className="followus ">
-            <FontAwesomeIcon className="ml-3 pl-3 footer-icons" icon={["fab", "facebook"]} />
-            <FontAwesomeIcon className="ml-3 pl-3 footer-icons" icon={["fab", "instagram"]} />
-            <FontAwesomeIcon className="ml-3 pl-3 footer-icons" icon={["fab", "linkedin"]} />
-            <FontAwesomeIcon className="ml-3 pl-3 footer-icons" icon={["fab", "twitter"]} />
+            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-fb" icon={["fab", "facebook"]} />
+            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-in" icon={["fab", "instagram"]} />
+            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-li" icon={["fab", "linkedin"]} />
+            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-tw" icon={["fab", "twitter"]} />
             </div>
           </section>
           <hr className="footer-hr" />

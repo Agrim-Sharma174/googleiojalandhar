@@ -27,9 +27,9 @@ const Navbar = () => {
 
   return  (
     <MDBNavbar expand='lg' light bgColor='light'>
-      <MDBContainer fluid>
+      <MDBContainer fluid className='nav-content'>
         <MDBNavbarBrand href='#'>
-            <img src={logo} width='200px' height='40px'  alt="" />
+            <img src={logo} width='240px' height='40px' className='logo'  alt="" />
         </MDBNavbarBrand>
 
         <MDBNavbarToggler

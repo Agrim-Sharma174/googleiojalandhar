@@ -44,22 +44,22 @@ const Navbar = () => {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
             <MDBNavbarItem>
-              <MDBNavbarLink  href='#'>
+              <MDBNavbarLink  href='#' className='nav-links'>
                 Schedule
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#'>Speaker</MDBNavbarLink>
+              <MDBNavbarLink href='#' className='nav-links'>Speaker</MDBNavbarLink>
             </MDBNavbarItem>
             
             <MDBNavbarItem>
-              <MDBNavbarLink href='#'>Partners</MDBNavbarLink>
+              <MDBNavbarLink href='#' className='nav-links'>Partners</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#'>Team</MDBNavbarLink>
+              <MDBNavbarLink href='#' className='nav-links'>Team</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#'>FAQs</MDBNavbarLink>
+              <MDBNavbarLink href='#' className='nav-links'>FAQs</MDBNavbarLink>
             </MDBNavbarItem>
 
            

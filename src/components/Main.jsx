@@ -7,11 +7,18 @@ import googledev from "../assets/googledev.jpg";
 import ptulogo from "../assets/classic-logo.png";
 import { MDBAccordion, MDBAccordionItem, MDBContainer } from "mdb-react-ui-kit";
 
+import { faFacebook, faTwitter,faInstagram , faLinkedin  } from '@fortawesome/free-brands-svg-icons';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
+import ImageComponent from "./ImageComponent.jsx";
+
 const Main = () => {
   return (
     <>
-      <img src={banner_mid} width="100%" height="250px" alt="" />
-
+      {/* <img src={banner_mid} width="100%" height="250px" alt="" /> */}
+      <ImageComponent />
       <div className="main-content d-flex flex-wrap">
         <div className="info">
           <h1 className="font-weight-lighter header">
@@ -161,7 +168,7 @@ const Main = () => {
       {/* Speakers */}
       <div className="schedule-section">
         <h1 className="schedule-title">Speakers</h1>
-        <div className="responsive-container-block container">
+        <div className="responsive-container-block container ">
           <div className="responsive-container-block">
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
@@ -376,8 +383,8 @@ const Main = () => {
 
       {/* Partners */}
 
-      <div className="partners">
         <hr />
+      <div className="partners">
         <h2 className="text-center mt-2">Sponsors</h2>
         <p className="text-center mt-2">
           Sponsors dedicated to building remarkable experience!
@@ -406,8 +413,8 @@ const Main = () => {
 
       {/* Team */}
 
-      <div className="team">
         <hr />
+      <div className="team">
         <h2 className="text-center mt-2">Team</h2>
 
         <div className="responsive-container-block container">
@@ -623,8 +630,8 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="partners">
         <hr />
+      <div className="faqs">
         <h2 className="text-center mt-2">Frequently asked questions</h2>
         <p className="text-center mt-2">
           Need Answers? Everything you need to know.
@@ -633,35 +640,59 @@ const Main = () => {
 
       <MDBContainer className="mt-5" style={{ maxWidth: "90%" }}>
         <MDBAccordion alwaysOpen initialActive={1}>
-          <MDBAccordionItem collapseId={1} headerTitle="Question #1">
-            <strong>This is the first item's accordion body.</strong> It is
-            shown by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+          <MDBAccordionItem
+            collapseId={1}
+            headerTitle="What is Google I/O Extended ?"
+          >
+            Google I/O Extended is the community led counterpart to Google I/O,
+            our annual Google led conference where the world hears about
+            Google's latest developer solutions, products, and technology.
           </MDBAccordionItem>
-          <MDBAccordionItem collapseId={2} headerTitle="Question #2">
-            <strong>This is the second item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+          <MDBAccordionItem collapseId={2} headerTitle="What are GDG's ?">
+            GDGs are focused on community building and learning about Google’s
+            technologies.
           </MDBAccordionItem>
-          <MDBAccordionItem collapseId={3} headerTitle="Question #3">
-            <strong>This is the third item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+          <MDBAccordionItem
+            collapseId={3}
+            headerTitle="Who can register for I/O Extended ?"
+          >
+            Beginners, experts, literally everyone. Anyone with the passion of
+            learning, who’s fond of technology, passionate programmers ,
+            everybody can register and attend.
+          </MDBAccordionItem>
+          <MDBAccordionItem
+            collapseId={4}
+            headerTitle="Is it mandatory to register to participate in the event ?"
+          >
+            Yes. Each individual may register for only one ticket. You may not
+            register on behalf of anyone else.
+          </MDBAccordionItem>
+          <MDBAccordionItem
+            collapseId={5}
+            headerTitle="I’m a beginner in programming. Can I still register?"
+          >
+            Yes. Anybody with the zeal in technology can register. We have
+            special tracks especially for beginners.
+          </MDBAccordionItem>
+          <MDBAccordionItem
+            collapseId={6}
+            headerTitle="What will attendees get by participating in the event ?"
+          >
+            We have a plethora of AMAZING perks awaiting for you!
+          </MDBAccordionItem>
+          <MDBAccordionItem
+            collapseId={7}
+            headerTitle="How can I become a member of GDG ?"
+          >
+            {" "}
+            Head to Google developers group website
+            (https://gdg.community.dev/gdg-jalandhar/)
+          </MDBAccordionItem>
+          <MDBAccordionItem
+            collapseId={8}
+            headerTitle="How can I communicate my queries ?  {email not found}"
+          >
+            Reach out to us at: [???@gmail.com]
           </MDBAccordionItem>
         </MDBAccordion>
       </MDBContainer>
@@ -670,17 +701,19 @@ const Main = () => {
 
       <div className="footer">
         <div className="footer-content">
-          <a href="">I/O Extended Jalandhar</a>
-          <section className="d-flex">
+          <a className="footer-heading" href="">I/O Extended Jalandhar</a>
+          <section className="d-flex  follow-section">
             <h5>Follow Us : </h5>
-            <i className="fa fa-twitter"></i>
-            <i className="fa fa-facebook"></i>
-            <i className="fa fa-instagram"></i>
-            <i className="fa fa-linkedin"></i>
+            <div className="followus ">
+            <FontAwesomeIcon className="ml-3 pl-3 footer-icons" icon={["fab", "facebook"]} />
+            <FontAwesomeIcon className="ml-3 pl-3 footer-icons" icon={["fab", "instagram"]} />
+            <FontAwesomeIcon className="ml-3 pl-3 footer-icons" icon={["fab", "linkedin"]} />
+            <FontAwesomeIcon className="ml-3 pl-3 footer-icons" icon={["fab", "twitter"]} />
+            </div>
           </section>
-          <hr />
+          <hr className="footer-hr" />
 
-          <section className="d-flex">
+          <section className="d-flex footer-link-section">
             <a href="">Google I/O 2023</a>
             <a className="footer-links" href="">
               About GDG Program

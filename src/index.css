@@ -988,7 +988,7 @@ hr {
 /* styles.css */
 @media (max-width: 576px) {
   .footer-heading {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 
   .follow-section {

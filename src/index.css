@@ -993,7 +993,7 @@ hr {
 
   .follow-section {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .followus {
     margin-left: -16px;

@@ -641,7 +641,7 @@ const Main = () => {
       </div>
 
       <MDBContainer className="mt-5" style={{ maxWidth: "90%" }}>
-        <MDBAccordion alwaysOpen initialActive={1}>
+        <MDBAccordion  initialActive={1}>
           <MDBAccordionItem
             collapseId={1}
             headerTitle="What is Google I/O Extended ?"

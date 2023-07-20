@@ -41,7 +41,7 @@ h6 {
 }
 
 .watch_party {
-  border-radius: 25%;
+  border-radius: 50px;
   margin-top: 1rem;
   margin-right: 2rem;
 }
@@ -223,6 +223,20 @@ p {
 
 .navbar-container {
   width: 100%;
+}
+.nav-total {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.logo-container {
+  height: 40px; /* Set the desired height for the logo container */
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  object-fit: contain; /* Use 'contain' to maintain the original aspect ratio and fit the image within the container */
+  max-height: 100%; /* Adjust this value as needed to control the height of the image */
 }
 
 @media (max-width: 767px) {
@@ -1011,10 +1025,6 @@ hr {
 
   #data {
     font-size: 1rem;
-  }
-
-  .watch_party {
-    margin-top: 3rem;
   }
 
   .detailsSec,

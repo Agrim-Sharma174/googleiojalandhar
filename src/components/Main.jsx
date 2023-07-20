@@ -180,8 +180,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Speaker</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -203,8 +203,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Speaker</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -226,8 +226,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Speaker</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -249,8 +249,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Speaker</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -272,8 +272,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Speaker</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -295,8 +295,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Speaker</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -318,8 +318,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Speaker</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -341,8 +341,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Speaker</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -364,8 +364,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Speaker</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -429,8 +429,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Team</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -452,8 +452,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Team</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -475,8 +475,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Team</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -498,8 +498,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Team</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -521,8 +521,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Team</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -544,8 +544,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Team</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -567,8 +567,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Team</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -590,8 +590,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Team</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -613,8 +613,8 @@ const Main = () => {
                     src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
                   />
                 </div>
-                <p className="text-blk name">Davis George</p>
-                <p className="text-blk position">CEO</p>
+                <p className="text-blk name">Name</p>
+                <p className="text-blk position">Team</p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -706,12 +706,12 @@ const Main = () => {
           <a className="footer-heading" href="">I/O Extended Jalandhar</a>
           <section className="d-flex  follow-section">
             <h5>Follow Us : </h5>
-            <div className="followus ">
+            {/* <div className="followus ">
             <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-fb" icon={["fab", "facebook"]} />
             <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-in" icon={["fab", "instagram"]} />
             <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-li" icon={["fab", "linkedin"]} />
             <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-tw" icon={["fab", "twitter"]} />
-            </div>
+            </div> */}
           </section>
           <hr className="footer-hr" />
 

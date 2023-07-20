@@ -28,9 +28,11 @@ const Navbar = () => {
   return  (
     <MDBNavbar expand='lg' light bgColor='light'>
       <MDBContainer fluid className='nav-content'>
-        <MDBNavbarBrand href='#'>
-            <img src={logo} width='240px' height='40px' className='logo'  alt="" />
-        </MDBNavbarBrand>
+      <div className='logo-container'>
+          <MDBNavbarBrand href='#'>
+            <img src={logo} width='240px' height='auto' className='logo' alt='' />
+          </MDBNavbarBrand>
+        </div>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'

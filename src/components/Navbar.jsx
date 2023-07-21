@@ -31,7 +31,7 @@ const Navbar = () => {
           <MDBNavbarBrand href="#">
             <img
               src={logo}
-              width="240px"
+              width="300px"
               height="auto"
               className="logo"
               alt=""
@@ -50,29 +50,29 @@ const Navbar = () => {
 
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
-            <MDBNavbarItem>
-              <MDBNavbarLink href="#" className="nav-links">
+            {/* <MDBNavbarItem>
+              <MDBNavbarLink href="#schedule" className="nav-links">
                 Schedule
               </MDBNavbarLink>
-            </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink href="#" className="nav-links">
+            </MDBNavbarItem> */}
+            {/* <MDBNavbarItem>
+              <MDBNavbarLink href="#speakers" className="nav-links">
                 Speaker
               </MDBNavbarLink>
-            </MDBNavbarItem>
+            </MDBNavbarItem> */}
 
             <MDBNavbarItem>
-              <MDBNavbarLink href="#" className="nav-links">
+              <MDBNavbarLink href="#partners" className="nav-links">
                 Partners
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="#" className="nav-links">
+              <MDBNavbarLink href="#team" className="nav-links">
                 Team
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="#" className="nav-links">
+              <MDBNavbarLink href="#faqs" className="nav-links">
                 FAQs
               </MDBNavbarLink>
             </MDBNavbarItem>

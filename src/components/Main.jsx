@@ -4,20 +4,26 @@ import watch_party from "../assets/watch_party.gif";
 import details_img from "../assets/details_img.jpg";
 import demo_profile from "../assets/dev_gif.png";
 import googledev from "../assets/googledev.jpg";
+import Bizarre_Coders from "../assets/Bizarre_Coders.jpg";
+import GDG_Jalandhar from "../assets/gdgjalandhar.jpg";
 import ptulogo from "../assets/classic-logo.png";
 import { MDBAccordion, MDBAccordionItem, MDBContainer } from "mdb-react-ui-kit";
+import ImageComponent from "./ImageComponent";
 
-import { faFacebook, faTwitter,faInstagram , faLinkedin  } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import ImageComponent from "./ImageComponent.jsx";
 
 const Main = () => {
   return (
     <>
-      {/* <img src={banner_mid} width="100%" height="250px" alt="" /> */}
       <ImageComponent />
       <div className="main-content d-flex flex-wrap">
         <div className="info">
@@ -96,11 +102,11 @@ const Main = () => {
         </div>
       </div>
 
-      <hr />
+      {/* <hr /> */}
 
       {/* Schedule Section */}
 
-      <div className="schedule-section">
+      {/* <div className="schedule-section" id="schedule">
         <h1 className="schedule-title">Schedule</h1>
         <section>
           <div className="container py-5">
@@ -165,10 +171,10 @@ const Main = () => {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
       {/* Speakers */}
-      <div className="schedule-section">
+      {/* <div className="schedule-section" id="speakers">
         <h1 className="schedule-title">Speakers</h1>
         <div className="responsive-container-block container ">
           <div className="responsive-container-block">
@@ -181,18 +187,8 @@ const Main = () => {
                   />
                 </div>
                 <p className="text-blk name">Name</p>
-                <p className="text-blk position">Speaker</p>
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">Job Role</p>
+                <p className="text-blk ">Company</p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
@@ -204,18 +200,8 @@ const Main = () => {
                   />
                 </div>
                 <p className="text-blk name">Name</p>
-                <p className="text-blk position">Speaker</p>
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">Job Role</p>
+                <p className="text-blk ">Company</p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
@@ -227,18 +213,8 @@ const Main = () => {
                   />
                 </div>
                 <p className="text-blk name">Name</p>
-                <p className="text-blk position">Speaker</p>
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">Job Role</p>
+                <p className="text-blk ">Company</p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
@@ -250,18 +226,8 @@ const Main = () => {
                   />
                 </div>
                 <p className="text-blk name">Name</p>
-                <p className="text-blk position">Speaker</p>
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">Job Role</p>
+                <p className="text-blk ">Company</p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
@@ -273,18 +239,8 @@ const Main = () => {
                   />
                 </div>
                 <p className="text-blk name">Name</p>
-                <p className="text-blk position">Speaker</p>
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">Job Role</p>
+                <p className="text-blk ">Company</p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
@@ -296,18 +252,8 @@ const Main = () => {
                   />
                 </div>
                 <p className="text-blk name">Name</p>
-                <p className="text-blk position">Speaker</p>
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">Job Role</p>
+                <p className="text-blk ">Company</p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
@@ -319,18 +265,8 @@ const Main = () => {
                   />
                 </div>
                 <p className="text-blk name">Name</p>
-                <p className="text-blk position">Speaker</p>
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">Job Role</p>
+                <p className="text-blk ">Company</p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
@@ -342,18 +278,8 @@ const Main = () => {
                   />
                 </div>
                 <p className="text-blk name">Name</p>
-                <p className="text-blk position">Speaker</p>
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">Job Role</p>
+                <p className="text-blk ">Company</p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
@@ -365,28 +291,18 @@ const Main = () => {
                   />
                 </div>
                 <p className="text-blk name">Name</p>
-                <p className="text-blk position">Speaker</p>
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">Job Role</p>
+                <p className="text-blk ">Company</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Partners */}
 
-        <hr />
-      <div className="partners">
+      <hr />
+      <div className="partners" id="partners">
         <h2 className="text-center mt-2">Sponsors</h2>
         <p className="text-center mt-2">
           Sponsors dedicated to building remarkable experience!
@@ -398,10 +314,43 @@ const Main = () => {
               src={googledev}
               title="Google Developers"
               className="googledevimg"
-              alt=""
+              alt="Google Developers logo"
             />
           </a>
-          <p className="text-center venue-text">Venue Partner</p>
+
+          <h2 className="text-center mt-2">Community Partners</h2>
+          <div className="community_logos">
+            <div className="commdiv">
+              {/* <a href=""> */}
+              <div>
+                <img
+                  src={GDG_Jalandhar}
+                  title="GDG Jalandhar"
+                  className="gdgjalandharimg"
+                  alt="GDG Jalandhar logo"
+                />
+              </div>
+              <div>GDG Jalandhar</div>
+              {/* </a> */}
+            </div>
+            <div className="commdiv">
+              {/* <a href=""> */}
+              <img
+                src={Bizarre_Coders}
+                title="Bizarre Coders"
+                className="bizarrecodersimg"
+                alt="Bizarre Coders logo"
+              />
+              {/* </a> */}
+
+              <div>
+                Bizarre Coders
+              </div>
+            </div>
+          </div>
+
+          {/* <p className="text-center venue-text">Venue Partner</p> */}
+          <h2 className="text-center mt-2">Venue Partner</h2>
           <a href="">
             <img
               src={ptulogo}
@@ -415,8 +364,8 @@ const Main = () => {
 
       {/* Team */}
 
-        <hr />
-      <div className="team">
+      <hr />
+      <div className="team" id="team">
         <h2 className="text-center mt-2">Team</h2>
 
         <div className="responsive-container-block container">
@@ -632,8 +581,8 @@ const Main = () => {
         </div>
       </div>
 
-        <hr />
-      <div className="faqs">
+      <hr />
+      <div className="faqs" id="faqs">
         <h2 className="text-center mt-2">Frequently asked questions</h2>
         <p className="text-center mt-2">
           Need Answers? Everything you need to know.
@@ -703,7 +652,9 @@ const Main = () => {
 
       <div className="footer">
         <div className="footer-content">
-          <a className="footer-heading" href="">I/O Extended Jalandhar</a>
+          <a className="footer-heading" href="">
+            I/O Extended Jalandhar
+          </a>
           <section className="d-flex  follow-section">
             <h5>Follow Us : </h5>
              <div className="followus ">
@@ -716,14 +667,28 @@ const Main = () => {
           <hr className="footer-hr" />
 
           <section className="d-flex footer-link-section">
-            <a href="">Google I/O 2023</a>
-            <a className="footer-links" href="">
+            <a href="https://io.google/2023/" target="_blank">
+              Google I/O 2023
+            </a>
+            <a
+              className="footer-links"
+              href="https://developers.google.com/community/gdg"
+              target="_blank"
+            >
               About GDG Program
             </a>
-            <a className="footer-links" href="">
+            <a
+              className="footer-links"
+              href="https://www.womentechmakers.com/"
+              target="_blank"
+            >
               About WTM Program
             </a>
-            <a className="footer-links" href="">
+            <a
+              className="footer-links"
+              href="https://developers.google.com/community-guidelines"
+              target="_blank"
+            >
               Community Guidelines
             </a>
           </section>

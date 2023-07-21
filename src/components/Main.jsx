@@ -10,16 +10,16 @@ import ptulogo from "../assets/classic-logo.png";
 import { MDBAccordion, MDBAccordionItem, MDBContainer } from "mdb-react-ui-kit";
 import ImageComponent from "./ImageComponent";
 
-// import {
-//   faFacebook,
-//   faTwitter,
-//   faInstagram,
-//   faLinkedin,
-// } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// import ImageComponent from "./ImageComponent.jsx";
+import ImageComponent from "./ImageComponent.jsx";
 
 const Main = () => {
   return (
@@ -590,7 +590,7 @@ const Main = () => {
       </div>
 
       <MDBContainer className="mt-5" style={{ maxWidth: "90%" }}>
-        <MDBAccordion alwaysOpen initialActive={1}>
+        <MDBAccordion  >
           <MDBAccordionItem
             collapseId={1}
             headerTitle="What is Google I/O Extended ?"
@@ -657,24 +657,12 @@ const Main = () => {
           </a>
           <section className="d-flex  follow-section">
             <h5>Follow Us : </h5>
-            {/* <div className="followus ">
-              <FontAwesomeIcon
-                className="ml-3 pl-3 footer-icons foot-fb"
-                icon={["fab", "facebook"]}
-              />
-              <FontAwesomeIcon
-                className="ml-3 pl-3 footer-icons foot-in"
-                icon={["fab", "instagram"]}
-              />
-              <FontAwesomeIcon
-                className="ml-3 pl-3 footer-icons foot-li"
-                icon={["fab", "linkedin"]}
-              />
-              <FontAwesomeIcon
-                className="ml-3 pl-3 footer-icons foot-tw"
-                icon={["fab", "twitter"]}
-              />
-            </div> */}
+             <div className="followus ">
+            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-fb" icon={["fab", "facebook"]} />
+            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-in" icon={["fab", "instagram"]} />
+            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-li" icon={["fab", "linkedin"]} />
+            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-tw" icon={["fab", "twitter"]} />
+            </div> 
           </section>
           <hr className="footer-hr" />
 

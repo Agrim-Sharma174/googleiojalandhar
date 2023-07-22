@@ -10,19 +10,18 @@ import ptulogo from "../assets/classic-logo.png";
 import { MDBAccordion, MDBAccordionItem, MDBContainer } from "mdb-react-ui-kit";
 import ImageComponent from "./ImageComponent";
 
-import simarpreet_pic from '../assets/simarpreet_pic.png'
-import veer_pic from '../assets/veer_pic.jpg'
-import kamal_pic from '../assets/kamal_pic.png'
-import agrim_pic from '../assets/agrim_pic.jpg'
-import aryan_pic from '../assets/aryan_pic.png'
-import mehak_pic from '../assets/mehak_pic.jpg'
-import amanpreet_pic from '../assets/amanpreet_pic.jpg'
-import lovejeet_pic from '../assets/lovejeet_pic.png'
-import surbhi_pic from '../assets/surbhi_pic.jpg'
-import suraj_pic from '../assets/suraj_pic.jpg'
-import simar_pic from '../assets/simar_pic.jpg'
-import gurkirat_pic from '../assets/gurkirat_pic.jpeg'
-
+import simarpreet_pic from "../assets/simarpreet_pic.png";
+import veer_pic from "../assets/veer_pic.jpg";
+import kamal_pic from "../assets/kamal_pic.png";
+import agrim_pic from "../assets/agrim_pic.jpg";
+import aryan_pic from "../assets/aryan_pic.png";
+import mehak_pic from "../assets/mehak_pic.jpg";
+import amanpreet_pic from "../assets/amanpreet_pic.jpg";
+import lovejeet_pic from "../assets/lovejeet_pic.png";
+import surbhi_pic from "../assets/surbhi_pic.jpg";
+import suraj_pic from "../assets/suraj_pic.jpg";
+import simar_pic from "../assets/simar_pic.jpg";
+import gurkirat_pic from "../assets/gurkirat_pic.jpeg";
 
 import {
   faFacebook,
@@ -34,6 +33,43 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Main = () => {
+  const techs = [
+    {
+      name: "Android",
+      link: "https://developer.android.com/",
+      logo: "https://io.google/2022/app/images/android-logo.svg",
+    },
+    {
+      name: "Chrome OS",
+      link: "https://chromeos.dev/en",
+      logo: "https://io.google/2022/app/images/chrome-logo.svg",
+    },
+    {
+      name: "Firebase",
+      link: "https://firebase.google.com/",
+      logo: "https://io.google/2022/app/images/firebase-logo.svg",
+    },
+    {
+      name: "Flutter",
+      link: "https://flutter.dev/",
+      logo: "https://io.google/2022/app/images/flutter-logo.svg",
+    },
+    {
+      name: "Google Cloud",
+      link: "https://cloud.google.com/",
+      logo: "https://io.google/2022/app/images/googlecloud-logo.svg",
+    },
+    {
+      name: "TensorFlow",
+      link: "https://www.tensorflow.org/",
+      logo: "https://io.google/2022/app/images/machinelearning-logo.svg",
+    },
+    {
+      name: "Web",
+      link: "https://developers.google.com/web",
+      logo: "https://io.google/2022/app/images/web-logo.svg",
+    },
+  ];
   return (
     <>
       <ImageComponent />
@@ -66,7 +102,9 @@ const Main = () => {
               Google's latest developer solutions, products, and technology.
             </p>
 
-            <button id="register">Register Now</button>
+            <button type="button" disabled id="register">
+              COMING SOON...
+            </button>
           </div>
         </div>
 
@@ -86,12 +124,12 @@ const Main = () => {
           <h2>What is Google I/O Extended Jalandhar ?</h2>
           <p>
             Google I/O Extended Jalandhar, a full day event, where you find
-            updates of Google's Products. The magic of I/O doesn’t end after the
-            main event. Local developers come together for I/O Extended events
-            to discuss the latest new technologies, summarize content, hosting
-            Q&As, and meet other technology enthusiasts. This will be a physical
-            event, promising to each of our attendee an experience, unlike
-            anything they've ever seen.
+            updates of Google's Products. The magic of I/O doesn&apos;t end
+            after the main event. Local developers come together for I/O
+            Extended events to discuss the latest new technologies, summarize
+            content, hosting Q&As, and meet other technology enthusiasts. This
+            will be a physical event, promising to each of our attendee an
+            experience, unlike anything they've ever seen.
           </p>
         </section>
       </div>
@@ -99,18 +137,25 @@ const Main = () => {
       <div className="tech">
         <h1>Technologies to be focused</h1>
         <p>
-          At sessions that span from the technical to the visionary, let’s
+          At sessions that span from the technical to the visionary, let&apos;s
           celebrate and discover what the technologies can enable: how product
           innovation, open source, and ML and AI can propel enterprises forward
           and solve the big problems that impact all of us.
         </p>
 
         <div className="icons d-flex">
-          <div className="boxes"></div>
-          <div className="boxes"></div>
-          <div className="boxes"></div>
-          <div className="boxes"></div>
-          <div className="boxes"></div>
+          {techs?.map((result, index) => (
+            <div className="boxes" key={index}>
+              <a href={result.link} target="_blank">
+                {" "}
+                <img
+                  src={result.logo}
+                  title={result.name}
+                  alt={result.name}
+                />{" "}
+              </a>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -316,12 +361,12 @@ const Main = () => {
       <hr />
       <div className="partners" id="partners">
         <h2 className="text-center mt-2">Sponsors</h2>
-        <p className="text-center mt-2">
+        <p className="text-center mt-2 mx-2">
           Sponsors dedicated to building remarkable experience!
         </p>
 
         <div className="googledev">
-          <a href="">
+          <a href="https://developers.googleblog.com/" target="_blank">
             <img
               src={googledev}
               title="Google Developers"
@@ -332,41 +377,41 @@ const Main = () => {
 
           <h2 className="text-center mt-2">Community Partners</h2>
           <div className="community_logos">
-            <div className="commdiv">
-              {/* <a href=""> */}
-              <div>
+            <a href="https://gdg.community.dev/gdg-jalandhar/" target="_blank">
+              <div className="commdiv">
+                <div>
+                  <img
+                    src={GDG_Jalandhar}
+                    title="GDG Jalandhar"
+                    className="gdgjalandharimg"
+                    alt="GDG Jalandhar logo"
+                  />
+                </div>
+                <div>GDG Jalandhar</div>
+              </div>
+            </a>
+            <a
+              href="https://bizarre-coders-official.netlify.app/"
+              target="_blank"
+            >
+              <div className="commdiv">
                 <img
-                  src={GDG_Jalandhar}
-                  title="GDG Jalandhar"
-                  className="gdgjalandharimg"
-                  alt="GDG Jalandhar logo"
+                  src={Bizarre_Coders}
+                  title="Bizarre Coders"
+                  className="bizarrecodersimg"
+                  alt="Bizarre Coders logo"
                 />
-              </div>
-              <div>GDG Jalandhar</div>
-              {/* </a> */}
-            </div>
-            <div className="commdiv">
-              {/* <a href=""> */}
-              <img
-                src={Bizarre_Coders}
-                title="Bizarre Coders"
-                className="bizarrecodersimg"
-                alt="Bizarre Coders logo"
-              />
-              {/* </a> */}
 
-              <div>
-                Bizarre Coders
+                <div>Bizarre Coders</div>
               </div>
-            </div>
+            </a>
           </div>
 
-          {/* <p className="text-center venue-text">Venue Partner</p> */}
           <h2 className="text-center mt-2">Venue Partner</h2>
-          <a href="">
+          <a href="https://ptu.ac.in/" target="_blank">
             <img
               src={ptulogo}
-              title="Google Developers"
+              title="IKGPTU"
               className="googledevimgptu"
               alt=""
             />
@@ -385,302 +430,145 @@ const Main = () => {
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
                 <div className="team-image-wrapper">
-                  <img
-                    className="team-member-image"
-                    src={simarpreet_pic}
-                  />
+                  <img className="team-member-image" src={simarpreet_pic} />
                 </div>
                 <p className="text-blk name">Simar Preet Singh</p>
                 <p className="text-blk position">Organiser</p>
-                <p className="text-blk position"><b>GDG Jalandhar</b></p>
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">
+                  <b>GDG Jalandhar</b>
+                </p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
                 <div className="team-image-wrapper">
-                  <img
-                    className="team-member-image"
-                    src={veer_pic}
-                  />
+                  <img className="team-member-image" src={veer_pic} />
                 </div>
                 <p className="text-blk name">Veer Pratap Singh</p>
                 <p className="text-blk position">Technical Lead</p>
-                <p className="text-blk position"><b>GDG Jalandhar</b></p>
-
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">
+                  <b>Antier Solutions</b>
+                </p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
                 <div className="team-image-wrapper">
-                  <img
-                    className="team-member-image"
-                    src={amanpreet_pic}
-
-                  />
+                  <img className="team-member-image" src={amanpreet_pic} />
                 </div>
                 <p className="text-blk name">Amanpreet Kaur</p>
                 <p className="text-blk position">Mobile Team Lead </p>
-                <p className="text-blk position"><b>O7 Solutions</b></p>
-
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">
+                  <b>O7 Solutions</b>
+                </p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
                 <div className="team-image-wrapper">
-                  <img
-                    className="team-member-image"
-                    src={kamal_pic}
-                  />
+                  <img className="team-member-image" src={kamal_pic} />
                 </div>
                 <p className="text-blk name">Kamal Nayan</p>
                 <p className="text-blk position">Student</p>
-                <p className="text-blk position"><b>IKGPTU</b></p>
-
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">
+                  <b>IKGPTU</b>
+                </p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
                 <div className="team-image-wrapper">
-                  <img
-                    className="team-member-image"
-                    src={agrim_pic}
-                  />
+                  <img className="team-member-image" src={agrim_pic} />
                 </div>
                 <p className="text-blk name">Agrim Sharma</p>
                 <p className="text-blk position">Student</p>
-                <p className="text-blk position"><b>IKGPTU</b></p>
-
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">
+                  <b>IKGPTU</b>
+                </p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
                 <div className="team-image-wrapper">
-                  <img
-                    className="team-member-image"
-                    src={suraj_pic}
-                  />
+                  <img className="team-member-image" src={suraj_pic} />
                 </div>
                 <p className="text-blk name">Suraj Pandey</p>
                 <p className="text-blk position">Student</p>
-                <p className="text-blk position"><b>IKGPTU</b></p>
-
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">
+                  <b>IKGPTU</b>
+                </p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
                 <div className="team-image-wrapper">
-                  <img
-                    className="team-member-image"
-                    src={aryan_pic}
-                  />
+                  <img className="team-member-image" src={aryan_pic} />
                 </div>
                 <p className="text-blk name">Aryan Sharma</p>
                 <p className="text-blk position">Student</p>
-                <p className="text-blk position"><b>IKGPTU</b></p>
-
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">
+                  <b>IKGPTU</b>
+                </p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
                 <div className="team-image-wrapper">
-                  <img
-                    className="team-member-image"
-                    src={mehak_pic}
-                  />
+                  <img className="team-member-image" src={mehak_pic} />
                 </div>
                 <p className="text-blk name">Mehak</p>
                 <p className="text-blk position">Student</p>
-                <p className="text-blk position"><b>IKGPTU</b></p>
-
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">
+                  <b>IKGPTU</b>
+                </p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
                 <div className="team-image-wrapper">
-                  <img
-                    className="team-member-image"
-                    src={simar_pic}
-                  />
+                  <img className="team-member-image" src={simar_pic} />
                 </div>
                 <p className="text-blk name">Simar Sidhu</p>
                 <p className="text-blk position">Student</p>
-                <p className="text-blk position"><b>IKGPTU</b></p>
-
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">
+                  <b>IKGPTU</b>
+                </p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
                 <div className="team-image-wrapper">
-                  <img
-                    className="team-member-image"
-                    src={lovejeet_pic}
-                  />
+                  <img className="team-member-image" src={lovejeet_pic} />
                 </div>
                 <p className="text-blk name">Lovejeet Singh</p>
                 <p className="text-blk position">Student</p>
-                <p className="text-blk position"><b>DAV University</b></p>
-
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">
+                  <b>DAV University</b>
+                </p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
                 <div className="team-image-wrapper">
-                  <img
-                    className="team-member-image"
-                    src={gurkirat_pic}
-                  />
+                  <img className="team-member-image" src={gurkirat_pic} />
                 </div>
                 <p className="text-blk name">Gurkirat Singh</p>
                 <p className="text-blk position">Student</p>
-                <p className="text-blk position"><b>LKCTC</b></p>
-
-                
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">
+                  <b>LKCTC</b>
+                </p>
               </div>
             </div>
             <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
               <div className="card">
                 <div className="team-image-wrapper">
-                  <img
-                    className="team-member-image"
-                    src={surbhi_pic}
-                  />
+                  <img className="team-member-image" src={surbhi_pic} />
                 </div>
                 <p className="text-blk name">Surbhi</p>
                 <p className="text-blk position">Student</p>
-                <p className="text-blk position"><b>DAV University</b></p>
-
-                {/* <p className="text-blk feature-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> */}
-                {/* <div className="social-icons">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank">
-                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
-                  </a>
-                </div> */}
+                <p className="text-blk position">
+                  <b>DAV University</b>
+                </p>
               </div>
             </div>
           </div>
@@ -696,7 +584,7 @@ const Main = () => {
       </div>
 
       <MDBContainer className="mt-5" style={{ maxWidth: "90%" }}>
-        <MDBAccordion  >
+        <MDBAccordion>
           <MDBAccordionItem
             collapseId={1}
             headerTitle="What is Google I/O Extended ?"
@@ -706,15 +594,15 @@ const Main = () => {
             Google's latest developer solutions, products, and technology.
           </MDBAccordionItem>
           <MDBAccordionItem collapseId={2} headerTitle="What are GDG's ?">
-            GDGs are focused on community building and learning about Google’s
-            technologies.
+            GDGs are focused on community building and learning about
+            Google&apos;s technologies.
           </MDBAccordionItem>
           <MDBAccordionItem
             collapseId={3}
             headerTitle="Who can register for I/O Extended ?"
           >
             Beginners, experts, literally everyone. Anyone with the passion of
-            learning, who’s fond of technology, passionate programmers ,
+            learning, who&apos;s fond of technology, passionate programmers ,
             everybody can register and attend.
           </MDBAccordionItem>
           <MDBAccordionItem
@@ -726,7 +614,7 @@ const Main = () => {
           </MDBAccordionItem>
           <MDBAccordionItem
             collapseId={5}
-            headerTitle="I’m a beginner in programming. Can I still register?"
+            headerTitle="I'm a beginner in programming. Can I still register?"
           >
             Yes. Anybody with the zeal in technology can register. We have
             special tracks especially for beginners.
@@ -763,12 +651,35 @@ const Main = () => {
           </a>
           <section className="d-flex  follow-section">
             <h5>Follow Us : </h5>
-             <div className="followus ">
-            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-fb" icon={["fab", "facebook"]} />
-            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-in" icon={["fab", "instagram"]} />
-            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-li" icon={["fab", "linkedin"]} />
-            <FontAwesomeIcon className="ml-3 pl-3 footer-icons foot-tw" icon={["fab", "twitter"]} />
-            </div> 
+            <div className="followus ">
+              <a href="https://www.facebook.com/GDGJalandhar" target="_blank">
+                <FontAwesomeIcon
+                  className="ml-3 pl-3 footer-icons foot-fb"
+                  icon={["fab", "facebook"]}
+                />
+              </a>
+              <a href="https://www.instagram.com/gdgjalandhar" target="_blank">
+                <FontAwesomeIcon
+                  className="ml-3 pl-3 footer-icons foot-in"
+                  icon={["fab", "instagram"]}
+                />
+              </a>
+              <a
+                href="http://linkedin.com/company/GDGJalandhar"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className="ml-3 pl-3 footer-icons foot-li"
+                  icon={["fab", "linkedin"]}
+                />
+              </a>
+              <a href="https://twitter.com/gdgjalandhar" target="_blank">
+                <FontAwesomeIcon
+                  className="ml-3 pl-3 footer-icons foot-tw"
+                  icon={["fab", "twitter"]}
+                />
+              </a>
+            </div>
           </section>
           <hr className="footer-hr" />
 

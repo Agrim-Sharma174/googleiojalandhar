@@ -10,6 +10,20 @@ import ptulogo from "../assets/classic-logo.png";
 import { MDBAccordion, MDBAccordionItem, MDBContainer } from "mdb-react-ui-kit";
 import ImageComponent from "./ImageComponent";
 
+import simarpreet_pic from '../assets/simarpreet_pic.png'
+import veer_pic from '../assets/veer_pic.jpg'
+import kamal_pic from '../assets/kamal_pic.png'
+import agrim_pic from '../assets/agrim_pic.jpg'
+import aryan_pic from '../assets/aryan_pic.png'
+import mehak_pic from '../assets/mehak_pic.jpg'
+import amanpreet_pic from '../assets/amanpreet_pic.jpg'
+import lovejeet_pic from '../assets/lovejeet_pic.png'
+import surbhi_pic from '../assets/surbhi_pic.jpg'
+import suraj_pic from '../assets/suraj_pic.jpg'
+import simar_pic from '../assets/simar_pic.jpg'
+import gurkirat_pic from '../assets/gurkirat_pic.jpeg'
+
+
 import {
   faFacebook,
   faTwitter,
@@ -373,11 +387,12 @@ const Main = () => {
                 <div className="team-image-wrapper">
                   <img
                     className="team-member-image"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    src={simarpreet_pic}
                   />
                 </div>
-                <p className="text-blk name">Name</p>
-                <p className="text-blk position">Team</p>
+                <p className="text-blk name">Simar Preet Singh</p>
+                <p className="text-blk position">Organiser</p>
+                <p className="text-blk position"><b>GDG Jalandhar</b></p>
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -396,11 +411,13 @@ const Main = () => {
                 <div className="team-image-wrapper">
                   <img
                     className="team-member-image"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
+                    src={veer_pic}
                   />
                 </div>
-                <p className="text-blk name">Name</p>
-                <p className="text-blk position">Team</p>
+                <p className="text-blk name">Veer Pratap Singh</p>
+                <p className="text-blk position">Technical Lead</p>
+                <p className="text-blk position"><b>GDG Jalandhar</b></p>
+
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -419,11 +436,14 @@ const Main = () => {
                 <div className="team-image-wrapper">
                   <img
                     className="team-member-image"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png"
+                    src={amanpreet_pic}
+
                   />
                 </div>
-                <p className="text-blk name">Name</p>
-                <p className="text-blk position">Team</p>
+                <p className="text-blk name">Amanpreet Kaur</p>
+                <p className="text-blk position">Mobile Team Lead </p>
+                <p className="text-blk position"><b>O7 Solutions</b></p>
+
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -442,11 +462,13 @@ const Main = () => {
                 <div className="team-image-wrapper">
                   <img
                     className="team-member-image"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png"
+                    src={kamal_pic}
                   />
                 </div>
-                <p className="text-blk name">Name</p>
-                <p className="text-blk position">Team</p>
+                <p className="text-blk name">Kamal Nayan</p>
+                <p className="text-blk position">Student</p>
+                <p className="text-blk position"><b>IKGPTU</b></p>
+
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -465,11 +487,13 @@ const Main = () => {
                 <div className="team-image-wrapper">
                   <img
                     className="team-member-image"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
+                    src={agrim_pic}
                   />
                 </div>
-                <p className="text-blk name">Name</p>
-                <p className="text-blk position">Team</p>
+                <p className="text-blk name">Agrim Sharma</p>
+                <p className="text-blk position">Student</p>
+                <p className="text-blk position"><b>IKGPTU</b></p>
+
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -488,11 +512,13 @@ const Main = () => {
                 <div className="team-image-wrapper">
                   <img
                     className="team-member-image"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png"
+                    src={suraj_pic}
                   />
                 </div>
-                <p className="text-blk name">Name</p>
-                <p className="text-blk position">Team</p>
+                <p className="text-blk name">Suraj Pandey</p>
+                <p className="text-blk position">Student</p>
+                <p className="text-blk position"><b>IKGPTU</b></p>
+
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -511,11 +537,13 @@ const Main = () => {
                 <div className="team-image-wrapper">
                   <img
                     className="team-member-image"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png"
+                    src={aryan_pic}
                   />
                 </div>
-                <p className="text-blk name">Name</p>
-                <p className="text-blk position">Team</p>
+                <p className="text-blk name">Aryan Sharma</p>
+                <p className="text-blk position">Student</p>
+                <p className="text-blk position"><b>IKGPTU</b></p>
+
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -534,11 +562,13 @@ const Main = () => {
                 <div className="team-image-wrapper">
                   <img
                     className="team-member-image"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    src={mehak_pic}
                   />
                 </div>
-                <p className="text-blk name">Name</p>
-                <p className="text-blk position">Team</p>
+                <p className="text-blk name">Mehak</p>
+                <p className="text-blk position">Student</p>
+                <p className="text-blk position"><b>IKGPTU</b></p>
+
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}
@@ -557,11 +587,89 @@ const Main = () => {
                 <div className="team-image-wrapper">
                   <img
                     className="team-member-image"
-                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
+                    src={simar_pic}
                   />
                 </div>
-                <p className="text-blk name">Name</p>
-                <p className="text-blk position">Team</p>
+                <p className="text-blk name">Simar Sidhu</p>
+                <p className="text-blk position">Student</p>
+                <p className="text-blk position"><b>IKGPTU</b></p>
+
+                {/* <p className="text-blk feature-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p> */}
+                {/* <div className="social-icons">
+                  <a href="https://www.twitter.com" target="_blank">
+                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
+                  </a>
+                  <a href="https://www.facebook.com" target="_blank">
+                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
+                  </a>
+                </div> */}
+              </div>
+            </div>
+            <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+              <div className="card">
+                <div className="team-image-wrapper">
+                  <img
+                    className="team-member-image"
+                    src={lovejeet_pic}
+                  />
+                </div>
+                <p className="text-blk name">Lovejeet Singh</p>
+                <p className="text-blk position">Student</p>
+                <p className="text-blk position"><b>DAV University</b></p>
+
+                {/* <p className="text-blk feature-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p> */}
+                {/* <div className="social-icons">
+                  <a href="https://www.twitter.com" target="_blank">
+                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
+                  </a>
+                  <a href="https://www.facebook.com" target="_blank">
+                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
+                  </a>
+                </div> */}
+              </div>
+            </div>
+            <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+              <div className="card">
+                <div className="team-image-wrapper">
+                  <img
+                    className="team-member-image"
+                    src={gurkirat_pic}
+                  />
+                </div>
+                <p className="text-blk name">Gurkirat Singh</p>
+                <p className="text-blk position">Student</p>
+                <p className="text-blk position"><b>LKCTC</b></p>
+
+                
+                {/* <p className="text-blk feature-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p> */}
+                {/* <div className="social-icons">
+                  <a href="https://www.twitter.com" target="_blank">
+                    <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg" />
+                  </a>
+                  <a href="https://www.facebook.com" target="_blank">
+                    <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg" />
+                  </a>
+                </div> */}
+              </div>
+            </div>
+            <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+              <div className="card">
+                <div className="team-image-wrapper">
+                  <img
+                    className="team-member-image"
+                    src={surbhi_pic}
+                  />
+                </div>
+                <p className="text-blk name">Surbhi</p>
+                <p className="text-blk position">Student</p>
+                <p className="text-blk position"><b>DAV University</b></p>
+
                 {/* <p className="text-blk feature-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p> */}

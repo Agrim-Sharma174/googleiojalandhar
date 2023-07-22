@@ -747,9 +747,9 @@ const Main = () => {
           </MDBAccordionItem>
           <MDBAccordionItem
             collapseId={8}
-            headerTitle="How can I communicate my queries ?  {email not found}"
+            headerTitle="How can I communicate my queries ? "
           >
-            Reach out to us at: [???@gmail.com]
+            Reach out to us at: [hello@gdgjalandhar.com]
           </MDBAccordionItem>
         </MDBAccordion>
       </MDBContainer>

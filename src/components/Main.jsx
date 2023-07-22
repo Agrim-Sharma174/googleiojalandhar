@@ -19,8 +19,6 @@ import {
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import ImageComponent from "./ImageComponent.jsx";
-
 const Main = () => {
   return (
     <>

@@ -74,7 +74,6 @@ const Navbar = () => {
             <MDBNavbarItem>
               <MDBNavbarLink href="#faqs" className="nav-links">
                 FAQs
-                {/* faqs */}
               </MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
@@ -85,5 +84,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-//
